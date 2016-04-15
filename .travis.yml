@@ -14,14 +14,14 @@ env:
     - secure: "Rg/17Nm0vlqxq+lu1a64wCIc8LYHD3w/LzHiG1hI0CCHWQSOFk0syTcyHHhix1Y0X1Ob0Y2O4TiUJuHBqnKNkHsJ7ULMQxJSSmhhZO8DLU1Dzw/hwXL7Ex31bH0ZOlVy0YW5lH/Z6GhgyG/a6xp7uhunISOK0GpM6xZW3lX9W6WSpH/tWK3kLWsW7ECXj5YlC3qS9GMcV9/qzFscAkQY9oAHaZKzGkwha7FPupBj1m+O/ta2kONh3xqIkcO0VKWBIUf4O3rJfp57iFBBc1/sIHCvhwtH/faA/gF1wz+vyfT2BXmZhJsQhvJlLIuOBwQvPNE8vqcqHPE9mgZrzCNEccd6CwlTTrjaPA8oB/mklkQqUXcOCpkXy/7ZAW4TKCLjmXY3E7dQ8GuoSvecWr29aL+Uv/usVdyVIOvfSQUZrheMUGUvBa9lvv1cOBIbKZbaiFX33eTJ5ooA4jr3tVo50ohcXpFN66ZCtsWjBkkjlxEboEHSw8doeWjQx2DuDZKViGBVsvYKHT6JWBnQqDje61oE1tYJS7EUC3SiwyGd3mLZwsO1J0ZnNzMOrCc8f97zwazH4c/O6jNT0FWguK0NIlxO4TnUOKdKw9hAvWgJuext+V18vFXGRiVE3dNHRaK/fhtSi+5j9k2bkl/vixMKKwKhRceW1V2xDy0trxIrBG0="
 
 
-before install:
+before_install:
     - brew remove --force $(brew list)
 
 install:
     - |
       MINICONDA_URL="http://repo.continuum.io/miniconda"
       MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
-      wget "${MINICONDA_URL}/${MINICONDA_FILE}"
+      curl -O "${MINICONDA_URL}/${MINICONDA_FILE}"
       bash $MINICONDA_FILE -b
 
       export PATH=/Users/travis/miniconda3/bin:$PATH
