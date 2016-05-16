@@ -5,7 +5,7 @@ Home: https://github.com/mapbox/snuggs
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Snuggs are s-expressions for Numpy
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/snuggs-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/snuggs-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/snuggs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/snuggs-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/snuggs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/snuggs-feedstock/branch/master)
