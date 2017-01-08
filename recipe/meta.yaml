@@ -1,37 +1,37 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
-    name: snuggs
-    version: {{ version }}
+  name: snuggs
+  version: {{ version }}
 
 source:
-    fn: snuggs-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/s/snuggs/snuggs-{{ version }}.tar.gz
-    md5: 2b40406f63e9564904a96bd6faba23ea
+  fn: snuggs-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/s/snuggs/snuggs-{{ version }}.tar.gz
+  sha256: e1d3c9364cec1b1b938627ebfc74f040be66711072d3ae754d844b9435f4940c
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - click
-        - numpy
-        - pyparsing
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - click
+    - numpy
+    - pyparsing
 
 test:
-    imports:
-        - snuggs
+  imports:
+    - snuggs
 
 about:
-    home: https://github.com/mapbox/snuggs
-    license: MIT
-    summary: 'Snuggs are s-expressions for NumPy.'
+  home: https://github.com/mapbox/snuggs
+  license: MIT
+  summary: 'Snuggs are s-expressions for NumPy.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
