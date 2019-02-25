@@ -11,7 +11,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Snuggs are s-expressions for NumPy.
+Summary: Snuggs are s-expressions for NumPy
 
 
 
