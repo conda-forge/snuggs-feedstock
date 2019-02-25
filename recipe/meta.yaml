@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.4.3" %}
 
 package:
   name: snuggs
@@ -7,11 +7,11 @@ package:
 source:
   fn: snuggs-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/snuggs/snuggs-{{ version }}.tar.gz
-  sha256: e1d3c9364cec1b1b938627ebfc74f040be66711072d3ae754d844b9435f4940c
+  sha256: d819e52a6b104936b293b625e5ab53cb8b95194643525a7d181334d743a77625
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
