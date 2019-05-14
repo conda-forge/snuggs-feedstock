@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About snuggs
 ============
 
@@ -18,8 +14,17 @@ Summary: Snuggs are s-expressions for NumPy
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/snuggs-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/snuggs-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5483&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/snuggs-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
