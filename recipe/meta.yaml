@@ -1,4 +1,4 @@
-{% set version = "1.4.5" %}
+{% set version = "1.4.6" %}
 
 package:
   name: snuggs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/snuggs/snuggs-{{ version }}.tar.gz
-  sha256: a315f8fc2d781225ffee92081c7e20217ba178e9b192ffd26b85a0013c056d2c
+  sha256: 8b87e5754fd2d0d1295b70bd502419f6f82be98c4bf668552da9d7c5f4387d1f
 
 build:
   number: 0
