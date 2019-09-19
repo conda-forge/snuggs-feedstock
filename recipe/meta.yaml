@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - numpy
-    - pyparsing
+    - pyparsing >=2.1.6
 
 test:
   imports:
